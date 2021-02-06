@@ -23,6 +23,12 @@ Document type | CDA examples | FHIR examples | Map CDA to FHIR | Map FHIR to CDA
 **Medication List document** | input\cda-ch-emed | input\ch-emed | input\maps\CdaChEmed MedicationListDocumentToBundle.map | -
 **Pharmaceutical Advice document** | input\cda-ch-emed | input\ch-emed | input\maps\CdaChEmed PharmaceuticalAdviceDocumentToBundle.map | input\maps\BundleToCdaCh EmedPharmaceuticalAdviceDocument.map   
 **Medication Treatment Plan document** | input\cda-ch-emed | input\ch-emed | input\maps\CdaChEmed MedicationTreatmentPlanDocumentToBundle.map | input\maps\BundleToCdaCh EmedMedicationTreatmentPlanDocument.map
+**Immunization Administration** | input\cda-ch-vacd | input\ch-vacd | input\maps\CdaChVacd ImmunizationAdministrationDocumentToBundle.map  | input\maps\BundleToCdaCh ImmunizationAdministrationDocument.map
+**Immunization Certificate** | input\cda-ch-vacd | input\ch-vacd | input\maps\CdaChVacd ImmunizationCertificateDocumentToBundle.map  | input\maps\BundleToCdaCh ImmunizationCertificateDocument.map
+**Vaccination Record** | input\cda-ch-vacd | input\ch-vacd | input\maps\CdaChVacd VaccinationRecordDocumentToBundle.map  | input\maps\BundleToCdaCh VaccinationRecordDocument.map
+**Immunization Recommendation Request** | input\cda-ch-vacd | input\ch-vacd | input\maps\CdaChVacd ImmunizationRecommendationRequestDocumentToBundle.map  | input\maps\BundleToCdaCh ImmunizationRecommendationRequestDocument.map
+**Immunization Recommendation Response** | input\cda-ch-vacd | input\ch-vacd | input\maps\CdaChVacd ImmunizationRecommendationResponseDocumentToBundle.map  | input\maps\BundleToCdaCh ImmunizationRecommendationResponseDocument.map
+
 
 ***Table 1**: Document types with examples and maps*
 
@@ -56,6 +62,22 @@ eMedication Documents:
    * [Pharmaceutical Advice document (FHIR)](http://fhir.ch/ig/ch-emed/StructureDefinition-ch-emed-document-pharmaceuticaladvice.html)
    * [Medication TreatmentPlan document (FHIR)](http://fhir.ch/ig/ch-emed/StructureDefinition-ch-emed-document-medicationtreatmentplan.html)
 
+
+eVaccination Documents:
+
+* Art-Decor [CDA-CH-VACD - Immunization Content (eVACDOC)](https://art-decor.org/art-decor/decor-project--cdachvacd-)
+   * [Swiss eVACDOC - Immunization Administration (CDA)](https://art-decor.org/art-decor/decor-project--cdachvacd-?section=templates&amp;id=2.16.756.5.30.1.1.10.1.16&amp;effectiveDate=2020‑06‑26&amp;language=en-US)
+   * [Swiss eVACDOC - Immunization Certificate (CDA)](https://art-decor.org/art-decor/decor-project--cdachvacd-?section=templates&amp;id=2.16.756.5.30.1.1.10.1.15&amp;effectiveDate=2020‑06‑26&amp;language=en-US)
+   * [Swiss eVACDOC - Vaccination Record (CDA)](https://art-decor.org/art-decor/decor-project--cdachvacd-?section=templates&amp;id=2.16.756.5.30.1.1.10.1.19&amp;effectiveDate=2020‑06‑26&amp;language=en-US)
+   * [Swiss eVACDOC - Immunization Recommendation Request (CDA)](https://art-decor.org/art-decor/decor-project--cdachvacd-?section=templates&amp;id=2.16.756.5.30.1.1.10.1.17&amp;effectiveDate=2020‑06‑26&amp;language=en-US)
+   * [Swiss eVACDOC - Immunization Recommendation Response (CDA)](https://art-decor.org/art-decor/decor-project--cdachvacd-?section=templates&amp;id=2.16.756.5.30.1.1.10.1.18&amp;effectiveDate=2020‑06‑26&amp;language=en-US)
+
+* FHIR Implementation Guide [CH VACD](http://fhir.ch/ig/ch-vacd/index.html)
+   * [Immunization Administration (FHIR)](http://fhir.ch/ig/ch-vacd/StructureDefinition-ch-vacd-document-immunization-administration.html)
+   * [Immunization Certificate (FHIR)](http://fhir.ch/ig/ch-vacd/StructureDefinition-ch-vacd-document-immunization-certificate.html)
+   * [Vaccination Record (FHIR)](http://fhir.ch/ig/ch-vacd/StructureDefinition-ch-vacd-document-vaccination-record.html)
+   * [Immunization Recommendation Request (FHIR)](http://fhir.ch/ig/ch-vacd/StructureDefinition-ch-vacd-document-immunization-recommendation-request.html)
+   * [Immunization Recommendation Response (FHIR)](http://fhir.ch/ig/ch-vacd/StructureDefinition-ch-vacd-document-immunization-recommendation-response.html)
 
 ## Setup
 

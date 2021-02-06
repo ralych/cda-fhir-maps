@@ -36,6 +36,16 @@ Accept: application/fhir+json
       "request": {
         "method": "POST"
       }
+    },
+    {
+      "resource": {
+        "resourceType" : "ImplementationGuide",
+        "version" : "current",
+        "packageId": "ch.fhir.ig.ch-vacd"
+      },
+      "request": {
+        "method": "POST"
+      }
     }
   ]
 }

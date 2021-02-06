@@ -37,6 +37,11 @@
       <packageId value="ch.fhir.ig.ch-emed"/>
       <version value="0.1.1"/>
    </dependsOn>
+      <dependsOn id="chvacd">
+      <uri value="http://fhir.ch/ig/ch-vacd/ImplementationGuide/ch.fhir.ig.ch-vacd"/>
+      <packageId value="ch.fhir.ig.ch-vacd"/>
+      <version value="0.1.0"/>
+   </dependsOn>
   <definition>
     <!-- References to structure maps -->
     <resource>
@@ -110,7 +115,29 @@
       <name value="CDA-CH-EMED Medication Card document to Bundle"/>
       <description value="CDA-CH-EMED Medication Card document to FHIR Bundle"/>
     </resource>
-
+    <resource>
+      <reference>
+        <reference value="StructureMap/CdaChVacdToBundle"/>
+      </reference>
+      <name value="CDA-CH-VACD to Bundle"/>
+      <description value="CDA-CH-VACD Document to FHIR Bundle"/>
+    </resource>
+    <!-- 
+    <resource>
+      <reference>
+        <reference value="StructureMap/CdaChVacdImmunizationAdministrationDocumentToBundle"/>
+      </reference>
+      <name value="CDA-CH-VACD Immunization Administration to Bundle"/>
+      <description value="CDA-CH-VACD Immunization Administration Document to FHIR Bundle"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureMap/CdaChVacdImmunizationCertificateDocumentToBundle"/>
+      </reference>
+      <name value="CDA-CH-VACD Immunization Certificate to Bundle"/>
+      <description value="CDA-CH-VACD Immunization Certificate Document to FHIR Bundle"/>
+    </resource>
+ -->
     <resource>
       <reference>
         <reference value="StructureMap/FhirToCdaTypes"/>

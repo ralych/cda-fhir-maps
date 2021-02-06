@@ -1,7 +1,7 @@
-input-cache/**
-output/**
-temp/**
-template/**
-.vscode/**
+input-cache
+output
+temp
+template
+.vscode
 matchbox-0.4.0-SNAPSHOT.jar
 **.jar
